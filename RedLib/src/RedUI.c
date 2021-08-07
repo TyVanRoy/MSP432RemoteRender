@@ -31,10 +31,10 @@ void InitRedUI(void){
     windowHead = (struct Window*) &DefaultContext;
     FocusWindow = (struct Window*) &DefaultContext;
 
-    for(int i = 0; i < MAX_WINDOWS; i++){
+    for(int i = 0; i < MAX_WINDOWS; ++i){
         windows[i].update = deadWindow;
     }
-    for(int i = 0; i < MAX_BUTTONS; i++){
+    for(int i = 0; i < MAX_BUTTONS; ++i){
         buttons[i].text = "I'm dead";
     }
 
